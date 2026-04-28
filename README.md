@@ -16,12 +16,15 @@ oop-tp-2026/
 ├── tp1/           Basics - Display & Output
 ├── tp2/           Control Structures & Loops
 ├── tp3/           Classes & Objects
-└── tp4/           Encapsulation, Inheritance & Polymorphism
+├── tp4/           Encapsulation, Inheritance & Polymorphism
     ├── exo1/      Training Center (Person / Teacher)
     ├── exo2/      Mini Battle Arena (GameCharacter / Warrior)
     ├── exo3/      Library System (Individual / Staff / SeniorStaff / Item / SpecialItem)
     ├── exo4/      Surface Calculation (Shape / Circle / Rectangle / Triangle)
     └── exo5/      Training Center - People & Courses (Individual / Teacher / SeniorTeacher / Course / OnlineCourse)
+
+└── tp8/           Collections & Associations
+    └── exo1/      University Course Management System (Student / Course / UniversitySystem)
 ```
 
 Each exercise in TP4 contains two solutions:
@@ -169,3 +172,41 @@ java tp4.exo5.dev.Main
 - **Polymorphism** — Method overriding with runtime dispatch
 - **Abstraction** — Abstract classes and methods
 - **Constructor Chaining** — Reuse of parent constructors via `super()`
+
+---
+
+## TP8 - Collections & Associations
+
+A university course management system that handles students, courses, enrollments, searching, sorting, grouping, and system statistics.
+
+Each solution follows the same structure as the rest of the repository:
+
+- **`simple/`** — Hardcoded demo showcasing the required operations
+- **`dev/`** — Interactive menu-driven application
+
+### Exo 1 - University Course Management System
+
+| Class | Role |
+|-------|------|
+| `Student` | Stores the student id, name, and enrolled courses |
+| `Course` | Stores the course code, title, capacity, and enrolled students |
+| `UniversitySystem` | Manages students, courses, enrollments, search, sorting, grouping, and statistics |
+| `Main` | Demo / interactive entry point |
+
+**Concepts:** Collections, bidirectional relationships, validation, Comparator-based sorting, grouping, consistency maintenance
+
+### How to Compile & Run (TP8 example)
+
+```bash
+# Compile simple version
+javac tp8/exo1/simple/*.java
+
+# Run simple version
+java tp8.exo1.simple.Main
+
+# Compile interactive version
+javac tp8/exo1/dev/*.java
+
+# Run interactive version
+java tp8.exo1.dev.Main
+```
